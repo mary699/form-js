@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            Sign up with us as an
+        </header>
+        <form>
+            <div class="user-box">
+                <div class="user-option">
+                    <div class="opts">
+                        <input type="radio" name="opt" id="check-individual" checked>
+                        <label for="check-individual">Indiviudal</label>
+                    </div>
+                    <div class="opts">
+                        <input type="radio" name="opt" id="check-ecommerce" checked>
+                        <label for="check-ecommerce">Ecommerce</label>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="field fname-field">
+                    <div class="input-field ">
+                        <input type="text" placeholder="First Name" class="fname">
+                        <span class="error fname-error">
+                            <i class="bx bx-error-circle error-icon"></i>
+                            <p class="error-text"></p>
+                        </span>
+                    </div>
+                </div>
+                <div class="field lname-field">
+                    <div class="input-field ">
+                        <input type="text" placeholder="Last Name" class="lname">
+                        <span class="error lname-error">
+                            <i class="bx bx-error-circle error-icon"></i>
+                            <p class="error-text"></p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="field email-field">
+                <div class="input-field">
+                    <input type="email" placeholder="Email Address" class="email">
+                    <span class="error email-error">
+                        <i class="bx bx-error-circle error-icon"></i>
+                        <p class="error-text"></p>
+                    </span>
+                </div>
+            </div>
+            <div class="field">
+                <div class="input-field phone-field">
+                    <input type="number" placeholder="Phone Number" class="phone">
+                    <span class="error phone-error">
+                        <i class="bx bx-error-circle error-icon"></i>
+                        <p class="error-text"></p>
+                    </span>
+                </div>
+            </div>
+            <div class="field create-password">
+                <div class="input-field">
+                    <input type="password" placeholder="Enter password" class="password">
+                    <i class="bx bx-hide show-hide"></i>
+                </div>
+                <span class="error password-error">
+                    <i class="bx bx-error-circle error-icon"></i>
+                    <p class="error-text"></p>
+                </span>
+            </div>
+            <div class="field confirm-password">
+                <div class="input-field">
+                    <input type="password" placeholder="Confirm new password" class="cPassword">
+                    <i class="bx bx-hide show-hide"></i>
+                </div>
+                <span class="error cPassword-error">
+                    <i class="bx bx-error-circle error-icon"></i>
+                    <p class="error-text"></p>
+                </span>
+            </div>
+            <div class="input-field button">
+                <input type="submit" value="Sign Up">
+            </div>
+        </form>
+    </div>
+    <script src="main.js"></script>
+
+</body>
+
+</html>

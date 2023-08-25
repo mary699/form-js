@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    /* padding: 15px; */
+  }
+  
+  .container {
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    background: whitesmoke;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.1);
+  }
+  
+  .container header {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+  }
+  
+  .container form {
+    margin-top: 30px;
+  
+  }
+  
+  form .user-option {
+    margin: 20px 0px;
+  }
+  
+  form :where(.user-option, .opts) {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  
+  form .opts {
+    column-gap: 5px;
+    cursor: pointer;
+  }
+  
+  .opts input {
+    accent-color: rgb(0, 0, 0);
+  }
+  
+  form .field {
+    margin-bottom: 20px;
+  }
+  
+  form .input-field {
+    position: relative;
+    height: 55px;
+    width: 100%;
+  }
+  
+  .invalid input{
+    border-color: red;
+  }
+  
+  .input-field input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    padding: 0 15px;
+    border: 1px solid #d1d1d1;
+  
+  }
+  
+  .input-field .show-hide {
+    position: absolute;
+    right: 13px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    padding: 3px;
+    color: green;
+  }
+  
+  .field .error {
+    display: flex;
+    align-items: center;
+    margin-top: 6px;
+    color: red;
+    font-size: 13px;
+    display: none;
+  }
+  
+  .invalid .error{
+    display: flex;
+    border-color: red;
+  }
+  
+  .error .error-icon {
+    margin-right: 6px;
+    font-size: 15px;
+  }
+  
+  .create-password .error {
+    align-items: flex-start;
+  }
+  
+  .create-password .error-icon {
+    margin-top: 4px;
+  }
+  
+  .button {
+    margin: 25px 0 6px;
+  }
+  
+  .button input {
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #000;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .button input:hover {
+    opacity: 0.6;
+  }
+  
+  
+  .column {
+    display: flex;
+    column-gap: 15px;
+    margin: 6px 0px;
+  }
+  
+  .column .field {
+    width: 50%;
+    margin: 20px 0px;
+  }
+  
+  @media screen and (max-width:500px) {
+    form .column {
+      flex-wrap: wrap;
+    }
+  
+    .column .field {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width:280px) {
+    body {
+      padding: 0;
+    }
+  }
